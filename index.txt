@@ -1,0 +1,21 @@
+data tables :
+ table plug-in for jquery
+-- we use it when manipulating large amount of data
+
+website:: datatables.net --css file & (required jquery file to work)js file 
+then make a table and give an id like mytable
+ add script tag and inside it the following:
+$(document).ready(function(){
+$('mytable').Datatable();
+});
+
+#to turn off the pagination :
+$(document).ready(function(){
+$('mytable').Datatable(
+	'paging':false,
+	'info':false/true,
+	'ordering':false/true,
+
+
+);
+});
